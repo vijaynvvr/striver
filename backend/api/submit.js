@@ -27,7 +27,7 @@ exports.submitCode = async (language, code, stdin) => {
         headers: {
             'content-type': 'application/json',
             'Content-Type': 'application/json',
-            'X-RapidAPI-Key': '2d170c755dmshfd678dc0e15bbdap1bd393jsn3f3e9b7bec83',
+            'X-RapidAPI-Key': process.env.RAPID_API_KEY,
             'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
         },
         data: {

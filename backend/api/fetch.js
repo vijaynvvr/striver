@@ -5,7 +5,7 @@ exports.fetchCode = async (token) => {
         method: 'GET',
         url: `https://judge0-ce.p.rapidapi.com/submissions/${token}`,
         headers: {
-            'X-RapidAPI-Key': '2d170c755dmshfd678dc0e15bbdap1bd393jsn3f3e9b7bec83',
+            'X-RapidAPI-Key': process.env.RAPID_API_KEY,
             'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
         }
     };
